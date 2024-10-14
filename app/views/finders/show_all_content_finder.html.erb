@@ -93,7 +93,9 @@
             <%=
               render partial: "finders/all_content_finder_facets/#{facet.to_partial_path}",
                 object: facet,
-                locals: { index:, count: }
+                # We want 1-based index in GA4 tracking (as 0 is the panel itself). Note that index
+                # is nil for non-visible sections which we need to guard for.
+                locals: { index: index && index + 1, count: }
             %>
           <% end %>
         <% end %>
