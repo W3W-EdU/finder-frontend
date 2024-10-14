@@ -16,6 +16,7 @@
     ga4_section: heading_text,
     ga4_filter_parent: heading_text,
     ga4_change_category: change_category,
+    ga4_index: { index_section:, index_section_count: },
   })
   component_helper.add_class("app-c-filter-section")
   component_helper.set_open(open)
@@ -31,8 +32,8 @@
         type: "finder",
         section: heading_text,
         text: heading_text,
-        index_section: index_section,
-        index_section_count: index_section_count,
+        index_section:,
+        index_section_count:,
       }
     }
   ) do %>
