@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "~> 3.3.0"
 
-gem "rails", "7.2.2"
+gem "rails", "7.2.2.1"
 
 gem "bootsnap", require: false
 gem "chronic"
@@ -10,10 +10,10 @@ gem "dalli"
 gem "dartsass-rails"
 gem "gds-api-adapters"
 gem "govuk_ab_testing"
-gem "govuk_app_config"
-gem "govuk_publishing_components"
+gem "govuk_app_config", ">= 9.15.4"
+gem "govuk_publishing_components", ">= 45.10.0"
 gem "rest-client"
-gem "slimmer"
+gem "slimmer", ">= 18.7.0"
 gem "sprockets-rails"
 gem "terser"
 
@@ -24,18 +24,18 @@ end
 
 group :development, :test do
   gem "awesome_print"
-  gem "dotenv-rails"
+  gem "dotenv-rails", ">= 3.1.5"
   gem "govuk_schemas"
-  gem "govuk_test"
+  gem "govuk_test", ">= 4.1.1"
   gem "listen"
   gem "pry-byebug"
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 7.1.1"
   gem "rubocop-govuk"
 end
 
 group :test do
   gem "climate_control"
-  gem "cucumber-rails", require: false
+  gem "cucumber-rails", ">= 3.1.1", require: false
   gem "factory_bot"
   gem "launchy"
   gem "rails-controller-testing"
