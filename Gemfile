@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 ruby "~> 3.3.0"
 
-gem "rails", "7.2.2"
+gem "rails", "7.2.2.2"
 
 gem "bootsnap", require: false
 gem "chronic"
@@ -11,7 +11,7 @@ gem "dartsass-rails"
 gem "gds-api-adapters"
 gem "govuk_ab_testing"
 gem "govuk_app_config"
-gem "govuk_publishing_components"
+gem "govuk_publishing_components", ">= 45.10.0"
 gem "rest-client"
 gem "slimmer"
 gem "sprockets-rails"
